@@ -1,30 +1,13 @@
-# ServiceExample #
-This is a example to run startForeground() without showing notification.
+# LockScreenExample
+original source from https://forest71.tistory.com/185
 
-It is an immortal service that can not be killed by Android.
+Android Lock Screen Example. 
 
-An immortal service can be invoked by calling startForegroundService.
+### Dead app
+<img src="https://user-images.githubusercontent.com/49779139/169681694-f3ed52f8-1801-47a3-887f-7a7b608feb45.gif" width="70%" height="70%"/>
 
-However, there is a problem that the notification is displayed.
+### Background
+<img src="https://user-images.githubusercontent.com/49779139/169681698-eb2c884b-85fa-4bca-a028-d3bc8db08350.gif" width="70%" height="70%"/>
 
-There were several attempts to solve this problem, but it did not work.
-
-This is an example of an attempt to solve this problem.
-
-### Principle ###
-- When the service is finished, the alarm is executed after 1 second.
-- In the alarm,
-- If it is an older version of android Oreo, just call startService to run the service.
-- If the version is later than Oreo, call startForegroundService to execute the immortal service, and start service by calling startService in this immortal service.
-- And then, terminate this immortal service.
-
-![image](./image.png)
-
-
-### INSTALLATION ###
-1. Clone this source from github (in android studio).
-2. Run.
-3. Quit app and check messages.
-
-### License ###
-MIT
+### in App 
+<img src="https://user-images.githubusercontent.com/49779139/169681702-1ac4b0f5-bf6a-47ae-bdc1-947e7a9ec615.gif" width="70%" height="70%"/>
